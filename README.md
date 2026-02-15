@@ -9,6 +9,8 @@ How to install
 
 3. run this command "python -m venv .venv" in terminal
 
-4. run "pip install -r requirements.txt"
+4. run "source .venv/bin/activate"
 
-5. after all steps complete, run the program using this command "python main.py" makesure you already    install python
+5. run "pip install -r requirements.txt"
+
+6. after all steps complete, run the program using this command "python main.py" makesure you already    install python
