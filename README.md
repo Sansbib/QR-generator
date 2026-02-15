@@ -13,4 +13,4 @@ How to install
 
 5. run "pip install -r requirements.txt"
 
-6. after all steps complete, run the program using this command "python main.py" makesure you already    install python
+6. after all steps complete, run the program using this command "python main.py" make sure you already    install python
