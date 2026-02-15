@@ -2,6 +2,7 @@
 a qr code generator from python 
 
 How to install
+make sure you have python on your computer
 
 1. git clone this repo using your terminal
 
@@ -13,4 +14,4 @@ How to install
 
 5. run "pip install -r requirements.txt"
 
-6. after all steps complete, run the program using this command "python main.py" make sure you already    install python
+6. after all steps complete, run the program using this command "python main.py"
