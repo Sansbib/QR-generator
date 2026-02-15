@@ -2,6 +2,7 @@
 a qr code generator from python 
 
 How to install
+
 make sure you have python on your computer
 
 1. git clone this repo using your terminal
