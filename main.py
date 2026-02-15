@@ -1,17 +1,17 @@
 import qrcode
 
 print("****QR CODE GENERATOR****")
-print("silahkan pilih mau generate apa")
+print("Please Choose What You Will Genarate")
 print('''
       ### 1. URL  ###
       ### 2. WIFI ###''')
 
-pilihan_user = int(input("Silahkan pilih 1/2: "))
+user_chose = int(input("Choose 1/2: "))
 
-if pilihan_user == 1 :
-    url = input("Masukan URL atau Teks: ").strip()
+if user_chose == 1 :
+    url = input("Type an URL or a Text: ").strip()
 
-    file_name = input("masukan nama file : ").strip()
+    file_name = input("File's name: ").strip()
 
     file_path = f"{file_name}.png"
 
@@ -20,16 +20,16 @@ if pilihan_user == 1 :
 
     img = qr.make_image()
     img.save(file_path)
-    print(f"foto qr sudah disimpah sebagai {file_path}") 
+    print(f"QR image saved to {file_path}") 
 
-elif pilihan_user == 2 :
-    ssid = input("masukan nama wifi: ")
-    password = input ("masukan password: ")
+elif user_chose == 2 :
+    ssid = input("SSID (wifi) name: ")
+    password = input ("Password: ")
     security = "WPA"
 
     wifi_data = f"WIFI:T:{security};S:{ssid};P:{password};;"
 
-    file_name = input("Simpan sebagai: ")
+    file_name = input("Save as: ")
     file_path = f"{file_name}.png"
 
     qr = qrcode.QRCode(border=4)
@@ -39,9 +39,9 @@ elif pilihan_user == 2 :
     img = qr.make_image(fill_color="black", back_color="white")
     img.save(file_path)
 
-    print(f"QR code wifi berhasil dibuat di {file_path}!")
+    print(f"QR image saved to {file_path}!")
 
 
 else :
-    print("program dihentikan")
-    exit()     
+    print("program stopped")
+    exit()
